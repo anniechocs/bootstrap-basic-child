@@ -1,5 +1,6 @@
 // VARIABLES 
-$base-col:#7006ff;
+//$base-col:#7006ff; old colour
+$base-col: #8906ff;
 $contr-col:transparent;
 
 
@@ -11,11 +12,6 @@ $greys: (
   'vlt': #f8f8f8,
 );
 
-$contrasts: (
-    'lime': #c5d447,
-    'green': #82c342,
-    'blue' : #9fe1f9,
-);
 
 $colour-set: (
     'dk': darken($base-col,10),
@@ -32,34 +28,26 @@ $colours1: (
     'lt':lighten($base-col,30),
     'vlt':lighten($base-col,45),
 );
+//
+//$colours2: (
+//    'dk': darken($base-col,15),
+//    'base': $base-col,
+//    'md': lighten($base-col,10),
+//    'ml': lighten($base-col,20),
+//    'contr':map-get($contrasts,'blue'),
+//    'vlt':lighten(map-get($contrasts,'blue'),15),
+//);
+//
+//$colours3: (
+//    'dk': darken($base-col,15),
+//    'base': $base-col,
+//    'md': lighten($base-col,10),
+//    'blue': map-get($contrasts,'blue'),
+//    'green':map-get($contrasts,'green'),
+//    'lime':map-get($contrasts,'lime'),
+//);
 
-$colours2: (
-    'dk': darken($base-col,15),
-    'base': $base-col,
-    'md': lighten($base-col,10),
-    'ml': lighten($base-col,20),
-    'contr':map-get($contrasts,'blue'),
-    'vlt':lighten(map-get($contrasts,'blue'),15),
-);
 
-$colours3: (
-    'dk': darken($base-col,15),
-    'base': $base-col,
-    'md': lighten($base-col,10),
-    'blue': map-get($contrasts,'blue'),
-    'green':map-get($contrasts,'green'),
-    'lime':map-get($contrasts,'lime'),
-);
-
-
-
-// Blues
-$dkblue: #2542BE;  //#33a; //#337;
-$mdblue: #2C78DE;
-$mlblue: #54a6fb;
-$ltblue: #F2F7FE;
-$ltblgrey: #F4F7FC;
-$dkblgrey: #E3E6ED;
 
 $greys: (
   'dk': #555,

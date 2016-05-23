@@ -1,15 +1,3 @@
-//variation of hues
-@for $i from 1 through 6 {
-   $degree: ($i - 3)*3;
-
-    #variation-colours .colour-box:nth-of-type(#{$i}){
-    background-color: adjust-hue($base-col,$degree); 
-        .colour-label:before{
-                content: "#{$degree}";
-            }
-        }
-     $i : $i + 1;
-}
 
 // Set of Contrast Colours
 $i : 1;

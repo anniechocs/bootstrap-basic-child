@@ -18,8 +18,8 @@ footer {
     }
     &#site-footer {
         padding: 15px;
-        background-color: $ltblgrey;
-        @include gradient ($ltgrey,$dkblgrey);
+        background-color: $ltgrey;
+        @include gradient ($ltgrey,$vltgrey);
         border: 1px solid $vltgrey;
         border-top: 3px solid $vltgrey;
         border-top-left-radius: 6px;

@@ -96,6 +96,18 @@ $i : 1;
     $i : $i + 1;
 }
 
-// Further colour variations
-//@import 'stylemodules/colour-variations';
 
+//variation of hues
+@for $i from 1 through 6 {
+   $degree: ($i - 3)*3;
+
+    #variation-colours .colour-box:nth-of-type(#{$i}){
+    background-color: adjust-hue($base-col,$degree); 
+        .colour-label:before{
+                content: "#{$degree}";
+            }
+        }
+     $i : $i + 1;
+}
+
+// Further colour variations stylemodules/colour-variations
