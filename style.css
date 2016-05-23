@@ -815,7 +815,7 @@ nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) {
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
 nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) {
-  background-color: #f6ebff; }
+  background-color: #ead2ff; }
   nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a {
     background-color: white;
     padding: 15px 9px 6px 9px;
@@ -1149,7 +1149,7 @@ nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) {
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
 nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) {
-  background-color: #f6ebff; }
+  background-color: #ead2ff; }
   nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a {
     background-color: white;
     padding: 15px 9px 6px 9px;
@@ -1487,6 +1487,18 @@ div#search-2.widget.widget_search {
   #colour-set .colour-box:nth-of-type(4) .colour-label:before {
     color: black;
     content: "ml"; }
+
+#colour-set .colour-box:nth-of-type(5) {
+  background-color: #d29fff; }
+  #colour-set .colour-box:nth-of-type(5) .colour-label:before {
+    color: black;
+    content: "lt"; }
+
+#colour-set .colour-box:nth-of-type(6) {
+  background-color: #f6ebff; }
+  #colour-set .colour-box:nth-of-type(6) .colour-label:before {
+    color: black;
+    content: "vlt"; }
 
 #variation-colours .colour-box:nth-of-type(1) {
   background-color: #7006ff; }
