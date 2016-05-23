@@ -20,8 +20,8 @@
 			<?php get_template_part( 'template-parts/styles/content', 'modulestyles2' );
 				echo "\n\n"; ?>
 
-			<?php get_template_part( 'template-parts/styles/content', 'featured' );
-				echo "\n\n"; ?>				
+			<?php //get_template_part( 'template-parts/styles/content', 'featured' );
+				//echo "\n\n"; ?>				
 
 
 			<div id="mod-nav" class="row style-module">
