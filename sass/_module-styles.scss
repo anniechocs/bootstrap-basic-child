@@ -1,0 +1,329 @@
+/***************** HEADERS **************/
+
+#module-styles-1 {
+.entry-header h1, .entry-header h1.entry-title, h1.entry-header, .page-header h1 {    
+    color: $base-dk;
+    border-bottom: 1px solid $base-dk;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 66%;
+    min-width: 250px;
+}
+}
+
+#module-styles-2 {
+.entry-header, .entry-header , .page-header {  
+    background: linear-gradient(to right,darken($base-col,20),lighten($base-col,20)); 
+    color: $base-dk;
+    padding: 0 0 3px 0;
+    width: 66%;
+    min-width: 250px;
+    h1{
+        background-color: white;
+        color: darken($base-col,20);
+        mix-blend-mode: lighten;
+        padding: 5px 0;
+        margin: 0;
+        }
+    }
+    h1.entry-title, h1.entry-header {
+         background-color: white;
+//        padding-bottom: 10px;
+//        margin-bottom: 20px; 
+    }
+
+}
+
+/**************** IMAGES ***************/
+
+.card-thmb{
+    width: 100%;
+    max-width: 300px;
+}
+img {
+    max-width: 100%;
+            height: auto;
+}
+
+.wp-caption {
+    border: $mlgrey;
+    img[class*="wp-image-"] {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+.monochrome-photo {
+    background: linear-gradient(darken($base-col,30),$base-col); 
+    float: left;
+    margin: 0 10px;
+    img {
+        margin: 3px;
+        mix-blend-mode: screen;
+    }
+}
+
+
+.wp-caption-text {
+   font-size : 0.8em;
+    padding: 0.4em;
+    margin: 0;
+}
+
+.cat-thmb {
+        width: 30%;
+        min-width: 120px;
+        float: left;
+        margin: 0 10px 10px 10px;
+}
+
+.link-image-class {
+    width: 50%;
+    min-width: 200px;
+    height: auto;
+}
+// images Monochrome
+//#module-styles-2 {
+//    .featured-img{
+//        max-width: 100%;
+//    }
+//}
+
+/************** BOXES AND CARDS ******************/
+
+@mixin big-border{
+    border: 2px solid map-get($greys,lt);
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+
+@mixin small-border {
+    border: $ltgrey solid 1px;
+//    padding: 10px;
+//    margin: 0 0 10px 0;
+    border-radius: 4px;
+}
+
+@mixin single-note-mixin {
+        @include small-border;
+        margin-bottom: 10px;
+        h2, h3{
+            color: $base-dk;
+             margin: 10px;
+            }
+        p {   
+            display: block;
+            float: left;
+            font-size :0.9em;
+            //padding: 0 10px 5px 10px;
+            margin: 0 10px 5px 10px;
+            }
+}
+
+.single-note{
+    background-color: white;
+    @include single-note-mixin;
+    }
+
+.notice-board{
+    @include single-note-mixin;
+    background-color: $ltgrey;
+}
+
+
+
+.horiz-card {
+    @include single-note-mixin;
+    @include clearfix;
+    div {
+        padding-right: 10px;
+    }    
+}
+
+
+.flex-row {
+    @include flex-container;
+    @include flex-flow(row wrap);    
+}
+
+
+
+
+/* Vert card general and fall back values */
+
+.vert-card {
+    @include single-note-mixin;
+    @include clearfix;
+    margin: 10px;
+    padding-bottom: 5px;
+    background-color: white;
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+    float: left;
+    display: block;
+    .flex-grow  div {
+        float: left;
+        max-width: 250px;
+         margin: 0 0 10px 0;
+      //  padding: 5px 10px;
+    }
+    .flex-img-holder{
+        padding: 0;
+        margin-bottom: 10px;
+        img {
+          width: 100%;  
+        }
+    }
+    .read-more {
+        font-style: italic;
+        text-align: right;
+        }
+}
+/* fall back for non-flex: (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .vert-card {
+        width: 30%;
+    }
+}
+
+
+/* flex-box version for browsers that support it */
+/******* vert-card flexbox *****/
+
+@mixin vert-card-mixin { 
+    @include flex-item(1, 1, 180px);
+    @include flex-container;
+    @include flex-flow(column nowrap);
+    @include flex-justify();
+    .card-head {
+        @include flex-item(1,1,auto);
+        //padding: 10px;
+    }
+    .flex-grow {
+        @include flex-item(50,1,auto);
+        @include flex-container;
+        @include flex-flow(row wrap);
+        //align-content: flex-start;
+        @include align-content(flex-start);
+        div {
+            @include flex-item(1,1,250px);
+        }
+        div.flex-img-holder{
+            @include flex-item(1,1,250px);
+        }
+        p {
+            @include flex-item(5,1,200px);
+        }
+    }
+    .card-footer{
+        padding: 10px;
+        @include flex-item(1,1,auto);
+        // align-self: flex-end;
+        @include align-self(flex-end);
+    }
+
+}
+
+.vert-card {
+    @include vert-card-mixin;
+}
+
+
+// Cards Magor
+
+#module-styles-1 {
+   .vert-card {
+        border-radius: 4px;
+        @include box-shadow($args3); 
+       .flex-img-holder {
+            margin: 0 10px 10px 10px;
+            @include box-shadow($args3); 
+       }
+   
+    } 
+    
+    .horiz-card{
+       @include box-shadow($args3); 
+        img {
+            @include box-shadow($args3); 
+        }
+    }
+    .single-note, notice-board {
+        @include box-shadow($args3); 
+    }
+}
+
+// Cards Monochrome
+#module-styles-2 {
+    #mod-vert-card {
+        @include gradient($ltgrey,white);
+    }
+    .vert-card:nth-of-type(1) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-bottom: 4px solid transparent;
+            @include border-gradient($base-col,lighten($base-col,20));
+        }
+    }
+    .vert-card:nth-of-type(2) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            @include border-gradient($base-col,lighten($base-col,20));
+        }
+    }
+        .vert-card:nth-of-type(3) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-bottom: 4px solid $base-col;
+        }
+    }
+  
+//        .vert-card:nth-of-type(3) {
+//        border: 1px solid $mlgrey;
+//        .card-head {
+//            background-color:$base-col;
+//            h2, h3 {color: white;}
+//            //@include gradient-horiz($base-col,lighten($base-col,20));
+//            //@include gradient(lighten($base-col,20),$base-col);
+//        }
+//    }
+}
+
+
+/************* LISTS ****************/
+
+
+
+
+
+.list-box {
+    h4 {
+        margin: 10px 0 5px 10px;
+    }
+    ul {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    li {
+        list-style: none;
+        padding: 0 0 5px 0;
+        font-size: 0.85em;
+    }
+}
+
+ul.button-list{
+      li{
+        list-style: none;
+        display: inline;
+        padding-bottom: 5px;
+          margin: 10px;
+    }  
+}
+

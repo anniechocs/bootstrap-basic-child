@@ -1,0 +1,87 @@
+/************ HEADER   ****************/
+.page-container > header {
+    background-color:$vltgrey;
+    margin: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+   // @include box-shadow($args2);
+}
+
+.site-branding > div {
+    margin-top: 0;
+}
+
+#title-branding {
+    max-width: 450px;
+    background-color:white;
+    padding: 15px;
+    margin: 0;
+    h1 {
+        color: $base-col;
+    }
+    h1 a:hover, h1 a:focus {
+        color: $base-col;
+        text-decoration: none;
+    }
+.site-description {
+    padding-top: 8px;
+    color: $mdgrey;
+    font-style: italic;
+    } 
+}
+
+//#main-header .site-branding {
+.site-branding {
+    margin-top: 2%;
+    margin-bottom: 10px;
+}
+
+
+div#search-2.widget.widget_search {
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.header-picture #header-image {
+    margin: 10px 0 -10px 0;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+// Header Styles Magor 
+#module-styles-1 {
+    .site-title {
+        max-width: 450px;
+        @include box-shadow($args2a);
+        margin-bottom: 40px;
+        border-radius: 4px;
+    }
+    .header-picture #header-image {
+        @include box-shadow($args1);
+    }
+}
+// Header Styles Monochrome
+#module-styles-2 {
+    .site-title {
+        max-width: 450px;
+        border: 1px solid $ltgrey;
+        background: linear-gradient(to right,darken($base-col,20),lighten($base-col,20)); 
+        padding: 5px 0;
+        margin-bottom: 40px;
+        #title-branding{
+             a {
+                display: inline-block;
+                @include gradient-horiz(darken($base-col,20),lighten($base-col,20));
+                 h1{
+                    background-color: white;
+                    color: darken($base-col,20);
+                    mix-blend-mode: lighten;
+                 }
+            }
+        }
+    }
+}

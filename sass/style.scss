@@ -1,0 +1,40 @@
+/*
+Theme Name: Nik's Bootstrap Basic Child
+Theme URI: 
+Author: Anne Griffith,
+Author URI: http://okvee.net
+Description: Bootstrap v.3 basic theme. Child theme based on Bootstrap Basic Theme by Vee Winch
+Version: 1.0.0
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Text Domain: niks-bootstrap-basic-child
+Template:       bootstrap-basic
+Domain Path: /languages/
+Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, front-page-post-form, post-formats, threaded-comments, translation-ready
+
+This theme built with Twitter Bootstrap v.3. It is basic theme with basic style for build new theme with Bootstrap.
+
+*/
+
+/*
+Changes by Anne Griffith
+*/
+//@import "compass";
+@import 'variables';
+@import 'mixins';
+@import 'bootstrap-styles';
+@import 'general-styles';
+@import 'module-styles';
+@import 'nav-styles';
+@import 'stylemodules/nav-variations';
+@import 'header-styles';
+@import 'sidebar-styles';
+@import 'stylesheet-styles';
+@import 'stylemodules/colour-variations';
+@import 'page-post-styles';
+@import 'plugin-styles';
+@import 'footer-styles';
+@import 'media-styles';
+
+
+ 

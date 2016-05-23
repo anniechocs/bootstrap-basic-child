@@ -1,0 +1,101 @@
+/* STYLE SHEET STYLES */
+
+#main-column {
+    article#generalstyles, article#colourstyles {
+    border: 2px solid map-get($greys,lt);
+    padding: 20px;
+}
+}
+
+.style-module{
+   @include small-border;
+    margin: 10px -20px;
+    padding: 10px;
+}
+
+#mod-notice .notice-board {
+    height: 200px;
+}
+
+
+.colour-box {
+    height: 50px;
+    margin-bottom: 10px;
+    background-clip: content-box;
+    content: '.';
+}
+
+.colour-label{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+
+#the-base-colour{
+    background-color: $base-col;
+    height: 150px;
+    padding: 10px;
+        .colour-label:before{
+                content: "Base Colour";
+            }
+}
+#the-contrast-colour{
+    background-color: $contr-col;
+        height: 150px;
+        padding: 10px;
+        color: black;
+        .colour-label:before{
+                content: "Contrast Colour";
+            }
+}
+
+//
+
+
+// Set of Greys
+$i : 1;
+@each $key, $value in $greys {
+        #grey-colours .colour-box:nth-of-type(#{$i}){
+            background-color: $value; 
+        .colour-label:before{
+            @if ($i < 3) {
+                color: white;
+                    }
+            @else {
+                     color: black;   
+                    }
+                content: "#{$key}grey";
+            }
+    }
+    $i : $i + 1;
+}
+
+
+
+// Colour Set 1
+$i : 1;
+@each $key, $value in $colour-set {
+        #colour-set .colour-box:nth-of-type(#{$i}){
+            background-color: $value; 
+                    .colour-label:before{
+            @if ($i < 3) {
+                color: white;
+                    }
+            @else {
+                     color: black;   
+                    }
+                content: "#{$key}";
+            }
+    }
+    $i : $i + 1;
+}
+
+// Further colour variations
+//@import 'stylemodules/colour-variations';
+

@@ -1,0 +1,76 @@
+
+/* STYLES FOR PLUGINS */
+
+/********** MY SHORT CODES *************/
+
+/* large_image  shortcode */
+.large-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*********** FACEBOOK FEED PLUGIN ****/
+
+.facebook {
+        h2 {
+        width: 10em;
+        margin-top: 0;
+        padding: 10px 5px 5px 15px;
+        position: relative;
+        top: 25px;
+        left :25px;
+        background-color: #fff;
+        @include box-shadow($args2);
+    }
+}
+.cff-wrapper {
+     border: 1px solid $ltgrey;
+    @include box-shadow($args3);
+    padding-top: 10px;
+
+}
+
+/********* BREADCRUMBS with Yoast Breadcrumbs plugin **********/
+
+.breadcrumb {
+    padding: 8px 15px 3px 15px;
+    margin-bottom: 10px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 0;
+    border-top : $ltgrey solid 1px; 
+    p{
+        margin-top:20px;
+        padding: 10px;
+         border: 1px solid $vltgrey;
+        @include gradient(#fefefe,$vltgrey);
+    }
+}
+    
+/************** CONTACT US PAGE WITH PLUGIN  *******/
+
+
+#FSContact1 {
+    margin-left: 10%;
+    margin-top: 50px;
+    padding: 10px 10px 20px 40px;
+    border: 1px solid #eee;
+    @include box-shadow($args2); 
+    border-radius: 6px;
+    max-width: 450px;
+}
+
+/********* EVENTS MANAGER STYLES *********/
+
+#sidebar-right .widget.widget_em_widget{
+    @include sub-list-styles;
+}
+
+.em-search-wrapper {
+    display: none;
+}
+
+
+
+

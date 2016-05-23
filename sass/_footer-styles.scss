@@ -1,0 +1,44 @@
+/*******  FOOTER   ********/
+
+footer {
+    #mma-copyright {
+        h3 {
+            text-align: center;
+            margin-top:5px;
+        }
+    }
+    #top-page-link {
+        float: right;
+        padding-right: 30px;
+    }
+    #dev-by {
+        clear: both;
+        text-align: center;
+        margin-top: 15px;
+    }
+    &#site-footer {
+        padding: 15px;
+        background-color: $ltblgrey;
+        @include gradient ($ltgrey,$dkblgrey);
+        border: 1px solid $vltgrey;
+        border-top: 3px solid $vltgrey;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+               
+    }
+    .widget_nav_menu {
+        margin-left: 20px;
+    }
+    h1 {
+        font-size: 1.4em;
+        margin-top: 0;
+    }
+    ul {
+        padding-left: 0;
+        padding-bottom: 15px;
+    }
+    li {
+       display: inline;
+        margin: 5px 10px;
+    }
+}

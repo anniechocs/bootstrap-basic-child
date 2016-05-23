@@ -1,0 +1,59 @@
+/************** BOOTSTRAP STYLES ***********/
+
+.btn-general {
+    max-width: 100%;
+    @include gradient(#eee,#ddd);
+    border-color: #ccc;
+    border-radius: 4px;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+
+/********* GRID SHORTHANDS FOR FLEX AND BOXES************/
+
+/* THIS DIV IS .col-xs-4.col-sm-2 and should be in a .row  */
+
+.col-4-2 {
+    float: left;
+    position: relative;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+    .col-4-2 {
+          width: 33.33333333%;
+    }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .col-4-2 {
+        width: 16.66666667%;
+    }
+}
+
+
+

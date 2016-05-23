@@ -1,0 +1,160 @@
+//MIXINS
+
+@mixin clearfix{
+    &:after {
+  content: "";
+  display: table;
+  clear: both;
+    }
+}
+
+@mixin box-shadow($arguments) {
+  -webkit-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
+
+@mixin border-bottom-radius($radius:4px) {
+  border-bottom-right-radius: $radius;
+   border-bottom-left-radius: $radius;
+}
+
+@mixin gradient ($startColor: #eee, $endColor: white) {
+	background-color: $startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+//    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (startColorstr=#{$startColor}, endColorstr=#{$endColor})";
+	background: -webkit-linear-gradient(top, $startColor, $endColor);
+    background: linear-gradient(to bottom, $startColor, $endColor);
+}
+
+@mixin gradient-horiz ($startColor: #eee, $endColor: white) {
+	background-color: $startColor;
+//        -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#{$startColor}, endColorstr=#{$endColor})";
+	background: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
+	background: -webkit-linear-gradient(left, $startColor, $endColor);
+    background: linear-gradient(to right, $startColor, $endColor);
+}
+
+@mixin border-gradient ($startColor: #eee, $endColor: white) {
+        background: white, $startColor;
+    	background: -webkit-linear-gradient(left, white, white), -webkit-linear-gradient(left, $startColor, $endColor);
+    background: linear-gradient(white,white),
+            linear-gradient(to right,$startColor,$endColor);
+        background-clip: padding-box, border-box;
+} 
+
+@mixin border-gradient-vert ($startColor: #eee, $endColor: white) {
+    background: white, $startColor;
+    background: -webkit-linear-gradient(top, white, white), -webkit-linear-gradient(left, $startColor, $endColor);
+    background: linear-gradient(white,white),
+            linear-gradient($startColor,$endColor);
+        background-clip: padding-box, border-box;
+}
+
+@mixin transition($duration:0.2s, $ease:ease-out) {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all $duration $ease;
+  -moz-transition: all $duration $ease;
+  -o-transition: all $duration $ease;
+  transition: all $duration $ease;
+}
+
+/****** FLEXBOX MIXINS *********/
+// adjusted from https://github.com/mastastealth/sass-flex-mixin/blob/master/_flexbox.scss
+
+@mixin flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-item($grow:1,$shrink:null,$basis:auto){
+       -webkit-box-flex: $grow;
+    -webkit-flex: $grow $shrink $basis;
+        -ms-flex: $grow $shrink $basis;
+            flex: $grow $shrink $basis;
+}
+
+@mixin flex-basis($value: auto) {
+	-webkit-flex-basis: $value;
+	-moz-flex-basis: $value;
+	-ms-flex-preferred-size: $value;
+	flex-basis: $value;
+}
+
+@mixin flex-flow($values: (row nowrap)) {
+	-webkit-flex-flow: $values;
+	-moz-flex-flow: $values;
+	-ms-flex-flow: $values;
+	flex-flow: $values;
+}
+
+// justify-content goes on flex container
+// flex-start | flex-end | center | space-between | space-around
+@mixin flex-justify ($value: flex-start) {
+	@if $value == flex-start {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+	} @else if $value == flex-end {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+	} @else if $value == space-between {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+	} @else if $value == space-around {
+		-ms-flex-pack: distribute;		
+	} @else {
+		-webkit-box-pack: $value;
+		-ms-flex-pack: $value;
+	}
+	-webkit-justify-content: $value;
+	-moz-justify-content: $value;
+	justify-content: $value;
+}
+
+// align-items goes on parent container
+@mixin align-items($value: stretch) {
+	@if $value == flex-start {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+	} @else if $value == flex-end {
+		-webkit-box-align: end;
+		-ms-flex-align: end;
+	} @else {
+		-webkit-box-align: $value;
+		-ms-flex-align: $value;
+	}
+	-webkit-align-items: $value;
+	-moz-align-items: $value;
+	align-items: $value;
+}
+
+// align-content goes on parent container
+@mixin align-content($value: stretch) {
+	-webkit-align-content: $value;
+	-moz-align-content: $value;
+	@if $value == flex-start {
+		-ms-flex-line-pack: start;
+	} @else if $value == flex-end {
+		-ms-flex-line-pack: end;
+	} @else {
+		-ms-flex-line-pack: $value;
+	}
+	align-content: $value;
+}
+
+// align-self goes on flex item
+@mixin align-self($value: auto) {
+	-webkit-align-self: $value;
+	-moz-align-self: $value;
+	@if $value == flex-start {
+		-ms-flex-item-align: start;
+	} @else if $value == flex-end {
+		-ms-flex-item-align: end;
+	} @else {
+		-ms-flex-item-align: $value;
+	}
+	align-self: $value;
+}

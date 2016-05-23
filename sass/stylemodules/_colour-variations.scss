@@ -1,0 +1,80 @@
+//variation of hues
+@for $i from 1 through 6 {
+   $degree: ($i - 3)*3;
+
+    #variation-colours .colour-box:nth-of-type(#{$i}){
+    background-color: adjust-hue($base-col,$degree); 
+        .colour-label:before{
+                content: "#{$degree}";
+            }
+        }
+     $i : $i + 1;
+}
+
+// Set of Contrast Colours
+$i : 1;
+@each $key, $value in $contrasts {
+        #contrast-colours .colour-box:nth-of-type(#{$i}){
+            background-color: $value; 
+        .colour-label:before{
+            color: black;
+            content: "#{$key}";
+            }
+    }
+    $i : $i + 1;
+}
+
+
+// Colour Set 1
+$i : 1;
+@each $key, $value in $colours1 {
+        #colour-scheme-1 .colour-box:nth-of-type(#{$i}){
+            background-color: $value; 
+                    .colour-label:before{
+            @if ($i < 3) {
+                color: white;
+                    }
+            @else {
+                     color: black;   
+                    }
+                content: "#{$key}";
+            }
+    }
+    $i : $i + 1;
+}
+
+// Colour Set 2
+$i : 1;
+@each $key, $value in $colours2 {
+        #colour-scheme-2 .colour-box:nth-of-type(#{$i}){
+            background-color: $value; 
+                    .colour-label:before{
+            @if ($i < 3) {
+                color: white;
+                    }
+            @else {
+                     color: black;   
+                    }
+                content: "#{$key}";
+            }
+    }
+    $i : $i + 1;
+}
+
+// Colour Set 3
+$i : 1;
+@each $key, $value in $colours3 {
+        #colour-scheme-3 .colour-box:nth-of-type(#{$i}){
+            background-color: $value; 
+                    .colour-label:before{
+            @if ($i < 3) {
+                color: white;
+                    }
+            @else {
+                     color: black;   
+                    }
+                content: "#{$key}";
+            }
+    }
+    $i : $i + 1;
+}

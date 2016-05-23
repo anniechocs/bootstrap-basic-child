@@ -1,0 +1,219 @@
+/****** MAGOR NAV STYLES *********/
+
+nav#magor-style{
+    @include nav-reset;
+}
+
+nav#magor-style.navbar-default {
+        @include gradient (lighten($base-col,10%), darken($base-col,10%));
+        border-color: $ltgrey;
+        @include border-bottom-radius(6px);
+        ul.navbar-nav {
+        li > a {
+            color: $ltgrey;
+            text-shadow: 0 1px 0 rgba(55,55,55,.05);
+            padding: 15px 9px 8px 9px;
+            border-bottom: 7px solid transparent;
+            }
+        li > a:hover, li > a:focus {
+            color: white;
+            border-bottom: 7px solid lighten($base-col,10%);
+            }
+        > li.active > a, > li.open > a {
+            color: white;
+            background-color: darken($base-col,10%);
+            background-image: none;
+            }
+        }
+}
+    
+nav#magor-style {
+
+//    #menu-primary.navbar-nav LI.active A
+//    {
+//        color: white;
+//        background-color: darken($base-col,10%);
+//        background-image: none;
+//    }
+
+//    .dropdown-menu {
+//        background-color: $ltgrey;
+//        border-color: $ltgrey;
+//    }
+    .dropdown-menu>.active>a, 
+    .dropdown-menu>.active>a:focus, 
+    .dropdown-menu>.active>a:hover {
+        background-color:  darken($base-col, 10%);
+        //color: $base-col;
+        color:$mdgrey;
+    }
+
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .open > a {
+        color:$mdgrey;
+        background-image: none;
+        background-color:  darken($base-col, 10%);
+      //  border-bottom: 7px solid darken($base-col,10%);
+    }
+
+    .navbar-default .navbar-collapse {
+        padding: 0 10px;
+        background-color: $base-col;
+        @include gradient (lighten($base-col,10%), darken($base-col,10%));
+    }
+
+    /* mobile device navbar */
+
+    button.navbar-toggle {
+        @include menu-button;
+            color: white;
+    //        #menu-btn-left {
+    //        h2{
+    //            color : white;
+    //        }
+    //    }
+
+    &:hover{  background-color: $base-col; }
+    &:focus{  background-color: $base-col; }
+     .icon-bar{ background-color: $ltgrey; }
+    }
+}
+
+
+
+/****** MONOCHROME NAV STYLES *********/
+
+nav#mono-style{
+    @include nav-reset;
+}
+
+nav#mono-style.navbar-default {
+        @include border-bottom-radius(6px);
+        ul.navbar-nav{
+          background: linear-gradient(to right, $base-col,lighten($base-col,35));
+            padding: 0 30px 0 15px;
+            border-radius: 6px;
+            border: 1px solid $ltgrey;
+        }
+        ul.navbar-nav > li {
+
+        > a {
+            background-color: white;
+            padding: 13px 8px 8px 9px; //default : 15px
+            background-clip: padding-box;
+        border-top: 3px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 4px solid transparent;
+        }
+        > a:hover, > a:focus {
+            color: $base-col;
+           // border-bottom: 7px solid lighten($base-col,10%);
+            border-top-color: rgba(255,255,255,0.4);
+            border-bottom-color: rgba(255,255,255,0.4);
+        }
+        }
+}
+nav#mono-style {
+    .navbar-collapse {
+        padding: 0; // default: 0 15px
+        border-radius: 4px;
+            ul.navbar-nav{
+                border: 1px solid $ltgrey;
+                background-color: white;
+        }
+    }
+    
+
+    #menu-primary.navbar-nav LI.active A
+    {
+        //color: $base-col;
+        background-image: none;
+    }
+
+//    .dropdown-menu>.active>a, 
+//    .dropdown-menu>.active>a:focus, 
+//    .dropdown-menu>.active>a:hover {
+//        border: none;
+//        background-image: none;
+//        padding: 5px;
+//        color: $base-col;
+//    }
+
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .open > a {
+        color: darken($base-col, 10%);
+        background-image: none;
+        border-bottom: 7px solid darken($base-col,10%);
+    }
+    
+    .navbar-header{
+        background-color: $base-col;
+        border-radius: 4px;
+        button {
+           background-color: lighten($base-col,15%); 
+        }
+    }
+    
+}
+
+/****** GRADED NAV STYLES *********/
+
+nav#graded-style{
+    @include nav-reset;
+}
+
+$i : 1;
+@each $key, $value in $colours1 {
+nav#graded-style.navbar-default {
+    
+        ul.navbar-nav > li:nth-of-type(#{$i}) {
+            background-color:  $value;
+        > a {
+            background-color: white;
+            padding: 15px 9px 6px 9px; //default : 15px
+            background-clip: padding-box;
+        //border-bottom: 7px solid $value;
+            border-bottom: 7px solid transparent;
+        }
+        > a:hover, > a:focus {
+            color: $base-col;
+            border-bottom: 7px solid rgba(255,255,255,0.4);;
+        }
+        }
+}
+        $i : $i + 1;
+}
+
+
+nav#graded-style {
+    .navbar-collapse {
+        border-radius: 4px;
+                    ul.navbar-nav{
+                border: 1px solid $ltgrey;
+                background-color: white;
+        }
+    }
+
+    #menu-primary.navbar-nav LI.active A
+    {
+        //color: $base-col;
+        background-image: none;
+    }
+
+
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .open > a {
+        color: darken($base-col, 10%);
+        background-image: none;
+        border-bottom: 7px solid darken($base-col,10%);
+    }
+    
+    .navbar-header{
+        background-color: $base-col;
+        border-radius: 4px;
+        button {
+           background-color: lighten($base-col,15%); 
+        }
+    }
+    
+}

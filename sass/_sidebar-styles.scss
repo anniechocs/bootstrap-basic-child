@@ -1,0 +1,125 @@
+/************* RIGHT SIDEBAR *****************/
+
+
+@mixin styled-list {
+            ul {
+            padding: 5px 0 0 0;
+            list-style: none;  
+                max-width: 350px;
+            li {
+                border: 1px solid $vltgrey;
+                a {
+                display: block;    
+                line-height: 1.2;
+                padding: 10px 5px 10px 15px;
+                }
+            }
+            li:hover, li:focus, li:active {
+                a {
+               text-decoration: none;
+                }
+            }
+            }
+}
+
+@mixin sub-list-styles {
+    @include styled-list;
+      ul {
+        padding-left: 5px;
+        line-height: 1;
+    }
+    
+    ul li a {
+        display: block;
+        line-height: 1.2;
+        padding: 5px 2px 2px 10px;
+    }
+
+    li ul {
+      padding: 0 0 0 10px;
+     }
+
+    li ul li {
+        padding: 0 0 5px 10px;
+        border: 1px solid transparent;
+        font-size: 0.85em;
+     }
+}
+
+.styled-list {
+    @include styled-list;
+}
+
+.sub-list {
+    @include sub-list-styles;
+}
+
+
+
+/************* MAGOR ******************/
+
+#module-styles-1 {
+    .styled-list {  
+        @include styled-list; 
+            ul {
+            li {
+                @include gradient(#fefefe,$vltgrey);
+                a {   
+                border-radius: 8px;
+                -webkit-transition-property: color, background-color;
+                transition-property: color, background-color;
+                @include transition(0.2s,ease-in-out);
+                }
+            }
+            li:hover, li:focus, li:active {
+                @include gradient(#fdfdfd,$ltgrey);
+            }
+        }
+    }
+
+    #sidebar-right {
+        background-color: #fff;
+            border: $ltgrey solid 1px;  
+            @include box-shadow($args3); 
+
+        .widget {
+            padding: 20px 0 0 0;
+            border: 0;
+            @include styled-list;
+            .widget-title {
+            font-size: 22px;
+                }
+            }   
+
+    }
+}
+
+/************* MONCHROME LIST STYLES ***********/
+
+#module-styles-2 {
+    
+    .styled-list{
+        @include styled-list; 
+        padding: 5px 0 15px 0;
+            border: 0 solid transparent;
+         border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        @include border-gradient($base-col,lighten($base-col,20));
+    }
+}
+
+
+#sidebar-right {
+    background-color: #fff;
+        border: $ltgrey solid 1px;  
+
+    .widget {
+        padding: 20px 0 0 0;
+        border: 0;
+        @include styled-list;
+        .widget-title {
+        font-size: 22px;
+        }
+    }
+    
+}

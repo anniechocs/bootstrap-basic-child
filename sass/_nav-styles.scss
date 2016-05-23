@@ -1,0 +1,104 @@
+/*************** NAVBAR   *************/
+
+
+/*********** NAV RESET ********/
+
+@mixin menu-button {
+            #menu-btn-left {
+            float:left;
+            h2{
+                margin:0 5px 5px 5px;
+            }
+            }
+            #menu-btn-right {
+                float: left;
+                margin: 5px;
+        }
+        .icon-bar{ background-color: $mdgrey; }
+    }
+
+
+@mixin nav-reset{
+    
+&.navbar-default {
+    @include gradient (white, white);
+    @include box-shadow(0 0 0 0);
+	 //  box-shadow: inset 0 0 0 rgba(255,255,255,.15),0 0 0 rgba(0,0,0,.075);
+    border-color: transparent;
+    background-color: transparent;
+    .navbar.navbar-default {
+        margin-bottom: 10px;
+        }
+    .navbar-collapse{
+        padding: 0; // default: 0 15px
+        border-radius: 4px;
+    }
+    ul.navbar-nav{
+        margin: 0; // default: 0 -15px
+        // border: 1px solid $ltgrey;
+       // background-color: white;
+       li >  a {
+            color: $mdgrey;
+            text-shadow: 0 1px 0 rgba(55,55,55,.05);
+            padding: 15px 9px 15px 9px; //default : 15px
+            }
+         li  > a:hover, li > a:focus {
+                color: $base-col;
+            }
+        > li.active > a, > li.open > a {
+            color: darken($base-col, 10%);
+            background-image: none;
+                }
+        .dropdown-menu {
+            background-color: $ltgrey;
+            border-color: $mdgrey;
+            > li > a {
+              padding: 3px 20px;  
+            }
+        }
+        .dropdown-menu>.active>a, 
+        .dropdown-menu>.active>a:focus, 
+        .dropdown-menu>.active>a:hover {
+            border: none;
+            background-image: none;
+            background-color: white;
+           // padding: 5px;
+            //padding-left: 15px;
+            color: $base-col;
+        }
+    }   
+}
+    
+    
+    
+//    #menu-primary.navbar-nav LI.active A
+//    {
+//         color: darken($base-col, 15%);
+//    }
+
+
+    // mobile device navbar     
+     button.navbar-toggle {
+        @include menu-button;
+        color: $base-col;
+    }       
+    
+}
+
+
+nav#reset-style{
+    @include nav-reset;
+}
+
+// Include nav-reset in main navigation
+nav{
+    @include nav-reset;
+}
+
+// Further Nav Styles
+@import 'stylemodules/nav-variations';
+
+
+
+
+
