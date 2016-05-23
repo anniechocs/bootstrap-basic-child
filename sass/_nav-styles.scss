@@ -40,7 +40,7 @@
        li >  a {
             color: $mdgrey;
             text-shadow: 0 1px 0 rgba(55,55,55,.05);
-            padding: 15px 9px 15px 9px; //default : 15px
+            padding: 15px;
             }
          li  > a:hover, li > a:focus {
                 color: $base-col;
@@ -95,8 +95,68 @@ nav{
     @include nav-reset;
 }
 
+
+/****** GRADED NAV STYLES *********/
+
+
+
+$i : 1;
+@each $key, $value in $colours1 {
+nav.navbar-default {
+    
+        ul.navbar-nav > li:nth-of-type(#{$i}) {
+            background-color:  $value;
+        > a {
+            background-color: white;
+            padding: 15px 15px 8px 15px; //default : 15px
+            background-clip: padding-box;
+        //border-bottom: 7px solid $value;
+            border-bottom: 7px solid transparent;
+        }
+        > a:hover, > a:focus {
+            color: $base-col;
+            border-bottom: 7px solid rgba(255,255,255,0.4);;
+        }
+        }
+}
+        $i : $i + 1;
+}
+
+
+nav {
+    .navbar-collapse {
+        border-radius: 4px;
+                    ul.navbar-nav{
+                border: 1px solid $ltgrey;
+                background-color: white;
+        }
+    }
+
+    #menu-primary.navbar-nav LI.active A
+    {
+        //color: $base-col;
+        background-image: none;
+    }
+
+
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .open > a {
+        color: darken($base-col, 10%);
+        background-image: none;
+        border-bottom: 7px solid darken($base-col,10%);
+    }
+    
+    .navbar-header{
+        background-color: $base-col;
+        border-radius: 4px;
+        button {
+           background-color: lighten($base-col,15%); 
+        }
+    }
+    
+}
 // Further Nav Styles
-@import 'stylemodules/nav-variations';
+//@import 'stylemodules/nav-variations';
 
 
 

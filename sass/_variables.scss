@@ -18,6 +18,8 @@ $colour-set: (
     'base': $base-col,
     'md': lighten($base-col,10),
     'ml': lighten($base-col,20),
+    'lt':lighten($base-col,30),
+    'vlt':lighten($base-col,45),
 );
 
 $colours1: (
@@ -26,7 +28,7 @@ $colours1: (
     'md': lighten($base-col,10),
     'ml': lighten($base-col,20),
     'lt':lighten($base-col,30),
-    'vlt':lighten($base-col,45),
+    'vlt':lighten($base-col,40),
 );
 //
 //$colours2: (

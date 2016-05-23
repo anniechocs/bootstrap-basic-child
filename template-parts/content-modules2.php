@@ -25,11 +25,7 @@
 
 
 			<div id="mod-nav" class="row style-module">
-				<h3>Example Monchrome Navigation</h3>
-				<nav id="mono-style" class="navbar navbar-default" role="navigation">
-					<?php get_template_part( 'template-parts/styles/content', 'navstyles' );
-					echo "\n\n"; ?>	
-				</nav>	
+
 
 				<h3>Example Graded Style  Navigation</h3>
 				<nav id="graded-style" class="navbar navbar-default" role="navigation">

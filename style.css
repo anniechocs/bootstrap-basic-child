@@ -429,7 +429,7 @@ nav#reset-style.navbar-default {
     nav#reset-style.navbar-default ul.navbar-nav li > a {
       color: #999;
       text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
+      padding: 15px; }
     nav#reset-style.navbar-default ul.navbar-nav li > a:hover, nav#reset-style.navbar-default ul.navbar-nav li > a:focus {
       color: #8906ff; }
     nav#reset-style.navbar-default ul.navbar-nav > li.active > a, nav#reset-style.navbar-default ul.navbar-nav > li.open > a {
@@ -479,7 +479,7 @@ nav.navbar-default {
     nav.navbar-default ul.navbar-nav li > a {
       color: #999;
       text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
+      padding: 15px; }
     nav.navbar-default ul.navbar-nav li > a:hover, nav.navbar-default ul.navbar-nav li > a:focus {
       color: #8906ff; }
     nav.navbar-default ul.navbar-nav > li.active > a, nav.navbar-default ul.navbar-nav > li.open > a {
@@ -509,672 +509,89 @@ nav button.navbar-toggle {
   nav button.navbar-toggle .icon-bar {
     background-color: #999; }
 
-/****** MAGOR NAV STYLES *********/
-nav#magor-style.navbar-default {
-  background-color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background: -webkit-linear-gradient(top, white, white);
-  background: linear-gradient(to bottom, white, white);
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
-  border-color: transparent;
-  background-color: transparent; }
-  nav#magor-style.navbar-default .navbar.navbar-default {
-    margin-bottom: 10px; }
-  nav#magor-style.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
-  nav#magor-style.navbar-default ul.navbar-nav {
-    margin: 0; }
-    nav#magor-style.navbar-default ul.navbar-nav li > a {
-      color: #999;
-      text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
-    nav#magor-style.navbar-default ul.navbar-nav li > a:hover, nav#magor-style.navbar-default ul.navbar-nav li > a:focus {
-      color: #8906ff; }
-    nav#magor-style.navbar-default ul.navbar-nav > li.active > a, nav#magor-style.navbar-default ul.navbar-nav > li.open > a {
-      color: #6e00d2;
-      background-image: none; }
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu {
-      background-color: #eee;
-      border-color: #999; }
-      nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > li > a {
-        padding: 3px 20px; }
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a,
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:focus,
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:hover {
-      border: none;
-      background-image: none;
-      background-color: white;
-      color: #8906ff; }
-nav#magor-style button.navbar-toggle {
-  color: #8906ff; }
-  nav#magor-style button.navbar-toggle #menu-btn-left {
-    float: left; }
-    nav#magor-style button.navbar-toggle #menu-btn-left h2 {
-      margin: 0 5px 5px 5px; }
-  nav#magor-style button.navbar-toggle #menu-btn-right {
-    float: left;
-    margin: 5px; }
-  nav#magor-style button.navbar-toggle .icon-bar {
-    background-color: #999; }
-
-nav#magor-style.navbar-default {
-  background-color: #a139ff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a139ff), to(#6e00d2));
-  background: -webkit-linear-gradient(top, #a139ff, #6e00d2);
-  background: linear-gradient(to bottom, #a139ff, #6e00d2);
-  border-color: #eee;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px; }
-  nav#magor-style.navbar-default ul.navbar-nav li > a {
-    color: #eee;
-    text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-    padding: 15px 9px 8px 9px;
-    border-bottom: 7px solid transparent; }
-  nav#magor-style.navbar-default ul.navbar-nav li > a:hover, nav#magor-style.navbar-default ul.navbar-nav li > a:focus {
-    color: white;
-    border-bottom: 7px solid #a139ff; }
-  nav#magor-style.navbar-default ul.navbar-nav > li.active > a, nav#magor-style.navbar-default ul.navbar-nav > li.open > a {
-    color: white;
-    background-color: #6e00d2;
-    background-image: none; }
-
-nav#magor-style {
-  /* mobile device navbar */ }
-  nav#magor-style .dropdown-menu > .active > a,
-  nav#magor-style .dropdown-menu > .active > a:focus,
-  nav#magor-style .dropdown-menu > .active > a:hover {
-    background-color: #6e00d2;
-    color: #999; }
-  nav#magor-style .navbar-default .navbar-nav > .active > a,
-  nav#magor-style .navbar-default .navbar-nav > .open > a {
-    color: #999;
-    background-image: none;
-    background-color: #6e00d2; }
-  nav#magor-style .navbar-default .navbar-collapse {
-    padding: 0 10px;
-    background-color: #8906ff;
-    background-color: #a139ff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#a139ff), to(#6e00d2));
-    background: -webkit-linear-gradient(top, #a139ff, #6e00d2);
-    background: linear-gradient(to bottom, #a139ff, #6e00d2); }
-  nav#magor-style button.navbar-toggle {
-    color: white; }
-    nav#magor-style button.navbar-toggle #menu-btn-left {
-      float: left; }
-      nav#magor-style button.navbar-toggle #menu-btn-left h2 {
-        margin: 0 5px 5px 5px; }
-    nav#magor-style button.navbar-toggle #menu-btn-right {
-      float: left;
-      margin: 5px; }
-    nav#magor-style button.navbar-toggle .icon-bar {
-      background-color: #999; }
-    nav#magor-style button.navbar-toggle:hover {
-      background-color: #8906ff; }
-    nav#magor-style button.navbar-toggle:focus {
-      background-color: #8906ff; }
-    nav#magor-style button.navbar-toggle .icon-bar {
-      background-color: #eee; }
-
-/****** MONOCHROME NAV STYLES *********/
-nav#mono-style.navbar-default {
-  background-color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background: -webkit-linear-gradient(top, white, white);
-  background: linear-gradient(to bottom, white, white);
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
-  border-color: transparent;
-  background-color: transparent; }
-  nav#mono-style.navbar-default .navbar.navbar-default {
-    margin-bottom: 10px; }
-  nav#mono-style.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
-  nav#mono-style.navbar-default ul.navbar-nav {
-    margin: 0; }
-    nav#mono-style.navbar-default ul.navbar-nav li > a {
-      color: #999;
-      text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
-    nav#mono-style.navbar-default ul.navbar-nav li > a:hover, nav#mono-style.navbar-default ul.navbar-nav li > a:focus {
-      color: #8906ff; }
-    nav#mono-style.navbar-default ul.navbar-nav > li.active > a, nav#mono-style.navbar-default ul.navbar-nav > li.open > a {
-      color: #6e00d2;
-      background-image: none; }
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu {
-      background-color: #eee;
-      border-color: #999; }
-      nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > li > a {
-        padding: 3px 20px; }
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a,
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:focus,
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:hover {
-      border: none;
-      background-image: none;
-      background-color: white;
-      color: #8906ff; }
-nav#mono-style button.navbar-toggle {
-  color: #8906ff; }
-  nav#mono-style button.navbar-toggle #menu-btn-left {
-    float: left; }
-    nav#mono-style button.navbar-toggle #menu-btn-left h2 {
-      margin: 0 5px 5px 5px; }
-  nav#mono-style button.navbar-toggle #menu-btn-right {
-    float: left;
-    margin: 5px; }
-  nav#mono-style button.navbar-toggle .icon-bar {
-    background-color: #999; }
-
-nav#mono-style.navbar-default {
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px; }
-  nav#mono-style.navbar-default ul.navbar-nav {
-    background: linear-gradient(to right, #8906ff, #deb8ff);
-    padding: 0 30px 0 15px;
-    border-radius: 6px;
-    border: 1px solid #eee; }
-  nav#mono-style.navbar-default ul.navbar-nav > li > a {
-    background-color: white;
-    padding: 13px 8px 8px 9px;
-    background-clip: padding-box;
-    border-top: 3px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 4px solid transparent; }
-  nav#mono-style.navbar-default ul.navbar-nav > li > a:hover, nav#mono-style.navbar-default ul.navbar-nav > li > a:focus {
-    color: #8906ff;
-    border-top-color: rgba(255, 255, 255, 0.4);
-    border-bottom-color: rgba(255, 255, 255, 0.4); }
-
-nav#mono-style .navbar-collapse {
-  padding: 0;
-  border-radius: 4px; }
-  nav#mono-style .navbar-collapse ul.navbar-nav {
-    border: 1px solid #eee;
-    background-color: white; }
-nav#mono-style #menu-primary.navbar-nav LI.active A {
-  background-image: none; }
-nav#mono-style .navbar-default .navbar-nav > .active > a,
-nav#mono-style .navbar-default .navbar-nav > .open > a {
-  color: #6e00d2;
-  background-image: none;
-  border-bottom: 7px solid #6e00d2; }
-nav#mono-style .navbar-header {
-  background-color: #8906ff;
-  border-radius: 4px; }
-  nav#mono-style .navbar-header button {
-    background-color: #ad52ff; }
-
 /****** GRADED NAV STYLES *********/
-nav#graded-style.navbar-default {
-  background-color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background: -webkit-linear-gradient(top, white, white);
-  background: linear-gradient(to bottom, white, white);
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
-  border-color: transparent;
-  background-color: transparent; }
-  nav#graded-style.navbar-default .navbar.navbar-default {
-    margin-bottom: 10px; }
-  nav#graded-style.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
-  nav#graded-style.navbar-default ul.navbar-nav {
-    margin: 0; }
-    nav#graded-style.navbar-default ul.navbar-nav li > a {
-      color: #999;
-      text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
-    nav#graded-style.navbar-default ul.navbar-nav li > a:hover, nav#graded-style.navbar-default ul.navbar-nav li > a:focus {
-      color: #8906ff; }
-    nav#graded-style.navbar-default ul.navbar-nav > li.active > a, nav#graded-style.navbar-default ul.navbar-nav > li.open > a {
-      color: #6e00d2;
-      background-image: none; }
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu {
-      background-color: #eee;
-      border-color: #999; }
-      nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > li > a {
-        padding: 3px 20px; }
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a,
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:focus,
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:hover {
-      border: none;
-      background-image: none;
-      background-color: white;
-      color: #8906ff; }
-nav#graded-style button.navbar-toggle {
-  color: #8906ff; }
-  nav#graded-style button.navbar-toggle #menu-btn-left {
-    float: left; }
-    nav#graded-style button.navbar-toggle #menu-btn-left h2 {
-      margin: 0 5px 5px 5px; }
-  nav#graded-style button.navbar-toggle #menu-btn-right {
-    float: left;
-    margin: 5px; }
-  nav#graded-style button.navbar-toggle .icon-bar {
-    background-color: #999; }
-
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) {
+nav.navbar-default ul.navbar-nav > li:nth-of-type(1) {
   background-color: #6100b8; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) > a {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(1) > a {
     background-color: white;
-    padding: 15px 9px 6px 9px;
+    padding: 15px 15px 8px 15px;
     background-clip: padding-box;
     border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) > a:focus {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(1) > a:hover, nav.navbar-default ul.navbar-nav > li:nth-of-type(1) > a:focus {
     color: #8906ff;
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) {
+nav.navbar-default ul.navbar-nav > li:nth-of-type(2) {
   background-color: #8906ff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) > a {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(2) > a {
     background-color: white;
-    padding: 15px 9px 6px 9px;
+    padding: 15px 15px 8px 15px;
     background-clip: padding-box;
     border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) > a:focus {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(2) > a:hover, nav.navbar-default ul.navbar-nav > li:nth-of-type(2) > a:focus {
     color: #8906ff;
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) {
+nav.navbar-default ul.navbar-nav > li:nth-of-type(3) {
   background-color: #a139ff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) > a {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(3) > a {
     background-color: white;
-    padding: 15px 9px 6px 9px;
+    padding: 15px 15px 8px 15px;
     background-clip: padding-box;
     border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) > a:focus {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(3) > a:hover, nav.navbar-default ul.navbar-nav > li:nth-of-type(3) > a:focus {
     color: #8906ff;
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) {
+nav.navbar-default ul.navbar-nav > li:nth-of-type(4) {
   background-color: #b96cff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) > a {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(4) > a {
     background-color: white;
-    padding: 15px 9px 6px 9px;
+    padding: 15px 15px 8px 15px;
     background-clip: padding-box;
     border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) > a:focus {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(4) > a:hover, nav.navbar-default ul.navbar-nav > li:nth-of-type(4) > a:focus {
     color: #8906ff;
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) {
+nav.navbar-default ul.navbar-nav > li:nth-of-type(5) {
   background-color: #d29fff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) > a {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(5) > a {
     background-color: white;
-    padding: 15px 9px 6px 9px;
+    padding: 15px 15px 8px 15px;
     background-clip: padding-box;
     border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) > a:focus {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(5) > a:hover, nav.navbar-default ul.navbar-nav > li:nth-of-type(5) > a:focus {
     color: #8906ff;
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) {
+nav.navbar-default ul.navbar-nav > li:nth-of-type(6) {
   background-color: #ead2ff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(6) > a {
     background-color: white;
-    padding: 15px 9px 6px 9px;
+    padding: 15px 15px 8px 15px;
     background-clip: padding-box;
     border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a:focus {
+  nav.navbar-default ul.navbar-nav > li:nth-of-type(6) > a:hover, nav.navbar-default ul.navbar-nav > li:nth-of-type(6) > a:focus {
     color: #8906ff;
     border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
 
-nav#graded-style .navbar-collapse {
+nav .navbar-collapse {
   border-radius: 4px; }
-  nav#graded-style .navbar-collapse ul.navbar-nav {
+  nav .navbar-collapse ul.navbar-nav {
     border: 1px solid #eee;
     background-color: white; }
-nav#graded-style #menu-primary.navbar-nav LI.active A {
+nav #menu-primary.navbar-nav LI.active A {
   background-image: none; }
-nav#graded-style .navbar-default .navbar-nav > .active > a,
-nav#graded-style .navbar-default .navbar-nav > .open > a {
+nav .navbar-default .navbar-nav > .active > a,
+nav .navbar-default .navbar-nav > .open > a {
   color: #6e00d2;
   background-image: none;
   border-bottom: 7px solid #6e00d2; }
-nav#graded-style .navbar-header {
+nav .navbar-header {
   background-color: #8906ff;
   border-radius: 4px; }
-  nav#graded-style .navbar-header button {
-    background-color: #ad52ff; }
-
-/****** MAGOR NAV STYLES *********/
-nav#magor-style.navbar-default {
-  background-color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background: -webkit-linear-gradient(top, white, white);
-  background: linear-gradient(to bottom, white, white);
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
-  border-color: transparent;
-  background-color: transparent; }
-  nav#magor-style.navbar-default .navbar.navbar-default {
-    margin-bottom: 10px; }
-  nav#magor-style.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
-  nav#magor-style.navbar-default ul.navbar-nav {
-    margin: 0; }
-    nav#magor-style.navbar-default ul.navbar-nav li > a {
-      color: #999;
-      text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
-    nav#magor-style.navbar-default ul.navbar-nav li > a:hover, nav#magor-style.navbar-default ul.navbar-nav li > a:focus {
-      color: #8906ff; }
-    nav#magor-style.navbar-default ul.navbar-nav > li.active > a, nav#magor-style.navbar-default ul.navbar-nav > li.open > a {
-      color: #6e00d2;
-      background-image: none; }
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu {
-      background-color: #eee;
-      border-color: #999; }
-      nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > li > a {
-        padding: 3px 20px; }
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a,
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:focus,
-    nav#magor-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:hover {
-      border: none;
-      background-image: none;
-      background-color: white;
-      color: #8906ff; }
-nav#magor-style button.navbar-toggle {
-  color: #8906ff; }
-  nav#magor-style button.navbar-toggle #menu-btn-left {
-    float: left; }
-    nav#magor-style button.navbar-toggle #menu-btn-left h2 {
-      margin: 0 5px 5px 5px; }
-  nav#magor-style button.navbar-toggle #menu-btn-right {
-    float: left;
-    margin: 5px; }
-  nav#magor-style button.navbar-toggle .icon-bar {
-    background-color: #999; }
-
-nav#magor-style.navbar-default {
-  background-color: #a139ff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a139ff), to(#6e00d2));
-  background: -webkit-linear-gradient(top, #a139ff, #6e00d2);
-  background: linear-gradient(to bottom, #a139ff, #6e00d2);
-  border-color: #eee;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px; }
-  nav#magor-style.navbar-default ul.navbar-nav li > a {
-    color: #eee;
-    text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-    padding: 15px 9px 8px 9px;
-    border-bottom: 7px solid transparent; }
-  nav#magor-style.navbar-default ul.navbar-nav li > a:hover, nav#magor-style.navbar-default ul.navbar-nav li > a:focus {
-    color: white;
-    border-bottom: 7px solid #a139ff; }
-  nav#magor-style.navbar-default ul.navbar-nav > li.active > a, nav#magor-style.navbar-default ul.navbar-nav > li.open > a {
-    color: white;
-    background-color: #6e00d2;
-    background-image: none; }
-
-nav#magor-style {
-  /* mobile device navbar */ }
-  nav#magor-style .dropdown-menu > .active > a,
-  nav#magor-style .dropdown-menu > .active > a:focus,
-  nav#magor-style .dropdown-menu > .active > a:hover {
-    background-color: #6e00d2;
-    color: #999; }
-  nav#magor-style .navbar-default .navbar-nav > .active > a,
-  nav#magor-style .navbar-default .navbar-nav > .open > a {
-    color: #999;
-    background-image: none;
-    background-color: #6e00d2; }
-  nav#magor-style .navbar-default .navbar-collapse {
-    padding: 0 10px;
-    background-color: #8906ff;
-    background-color: #a139ff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#a139ff), to(#6e00d2));
-    background: -webkit-linear-gradient(top, #a139ff, #6e00d2);
-    background: linear-gradient(to bottom, #a139ff, #6e00d2); }
-  nav#magor-style button.navbar-toggle {
-    color: white; }
-    nav#magor-style button.navbar-toggle #menu-btn-left {
-      float: left; }
-      nav#magor-style button.navbar-toggle #menu-btn-left h2 {
-        margin: 0 5px 5px 5px; }
-    nav#magor-style button.navbar-toggle #menu-btn-right {
-      float: left;
-      margin: 5px; }
-    nav#magor-style button.navbar-toggle .icon-bar {
-      background-color: #999; }
-    nav#magor-style button.navbar-toggle:hover {
-      background-color: #8906ff; }
-    nav#magor-style button.navbar-toggle:focus {
-      background-color: #8906ff; }
-    nav#magor-style button.navbar-toggle .icon-bar {
-      background-color: #eee; }
-
-/****** MONOCHROME NAV STYLES *********/
-nav#mono-style.navbar-default {
-  background-color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background: -webkit-linear-gradient(top, white, white);
-  background: linear-gradient(to bottom, white, white);
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
-  border-color: transparent;
-  background-color: transparent; }
-  nav#mono-style.navbar-default .navbar.navbar-default {
-    margin-bottom: 10px; }
-  nav#mono-style.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
-  nav#mono-style.navbar-default ul.navbar-nav {
-    margin: 0; }
-    nav#mono-style.navbar-default ul.navbar-nav li > a {
-      color: #999;
-      text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
-    nav#mono-style.navbar-default ul.navbar-nav li > a:hover, nav#mono-style.navbar-default ul.navbar-nav li > a:focus {
-      color: #8906ff; }
-    nav#mono-style.navbar-default ul.navbar-nav > li.active > a, nav#mono-style.navbar-default ul.navbar-nav > li.open > a {
-      color: #6e00d2;
-      background-image: none; }
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu {
-      background-color: #eee;
-      border-color: #999; }
-      nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > li > a {
-        padding: 3px 20px; }
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a,
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:focus,
-    nav#mono-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:hover {
-      border: none;
-      background-image: none;
-      background-color: white;
-      color: #8906ff; }
-nav#mono-style button.navbar-toggle {
-  color: #8906ff; }
-  nav#mono-style button.navbar-toggle #menu-btn-left {
-    float: left; }
-    nav#mono-style button.navbar-toggle #menu-btn-left h2 {
-      margin: 0 5px 5px 5px; }
-  nav#mono-style button.navbar-toggle #menu-btn-right {
-    float: left;
-    margin: 5px; }
-  nav#mono-style button.navbar-toggle .icon-bar {
-    background-color: #999; }
-
-nav#mono-style.navbar-default {
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px; }
-  nav#mono-style.navbar-default ul.navbar-nav {
-    background: linear-gradient(to right, #8906ff, #deb8ff);
-    padding: 0 30px 0 15px;
-    border-radius: 6px;
-    border: 1px solid #eee; }
-  nav#mono-style.navbar-default ul.navbar-nav > li > a {
-    background-color: white;
-    padding: 13px 8px 8px 9px;
-    background-clip: padding-box;
-    border-top: 3px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 4px solid transparent; }
-  nav#mono-style.navbar-default ul.navbar-nav > li > a:hover, nav#mono-style.navbar-default ul.navbar-nav > li > a:focus {
-    color: #8906ff;
-    border-top-color: rgba(255, 255, 255, 0.4);
-    border-bottom-color: rgba(255, 255, 255, 0.4); }
-
-nav#mono-style .navbar-collapse {
-  padding: 0;
-  border-radius: 4px; }
-  nav#mono-style .navbar-collapse ul.navbar-nav {
-    border: 1px solid #eee;
-    background-color: white; }
-nav#mono-style #menu-primary.navbar-nav LI.active A {
-  background-image: none; }
-nav#mono-style .navbar-default .navbar-nav > .active > a,
-nav#mono-style .navbar-default .navbar-nav > .open > a {
-  color: #6e00d2;
-  background-image: none;
-  border-bottom: 7px solid #6e00d2; }
-nav#mono-style .navbar-header {
-  background-color: #8906ff;
-  border-radius: 4px; }
-  nav#mono-style .navbar-header button {
-    background-color: #ad52ff; }
-
-/****** GRADED NAV STYLES *********/
-nav#graded-style.navbar-default {
-  background-color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background: -webkit-linear-gradient(top, white, white);
-  background: linear-gradient(to bottom, white, white);
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
-  border-color: transparent;
-  background-color: transparent; }
-  nav#graded-style.navbar-default .navbar.navbar-default {
-    margin-bottom: 10px; }
-  nav#graded-style.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
-  nav#graded-style.navbar-default ul.navbar-nav {
-    margin: 0; }
-    nav#graded-style.navbar-default ul.navbar-nav li > a {
-      color: #999;
-      text-shadow: 0 1px 0 rgba(55, 55, 55, 0.05);
-      padding: 15px 9px 15px 9px; }
-    nav#graded-style.navbar-default ul.navbar-nav li > a:hover, nav#graded-style.navbar-default ul.navbar-nav li > a:focus {
-      color: #8906ff; }
-    nav#graded-style.navbar-default ul.navbar-nav > li.active > a, nav#graded-style.navbar-default ul.navbar-nav > li.open > a {
-      color: #6e00d2;
-      background-image: none; }
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu {
-      background-color: #eee;
-      border-color: #999; }
-      nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > li > a {
-        padding: 3px 20px; }
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a,
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:focus,
-    nav#graded-style.navbar-default ul.navbar-nav .dropdown-menu > .active > a:hover {
-      border: none;
-      background-image: none;
-      background-color: white;
-      color: #8906ff; }
-nav#graded-style button.navbar-toggle {
-  color: #8906ff; }
-  nav#graded-style button.navbar-toggle #menu-btn-left {
-    float: left; }
-    nav#graded-style button.navbar-toggle #menu-btn-left h2 {
-      margin: 0 5px 5px 5px; }
-  nav#graded-style button.navbar-toggle #menu-btn-right {
-    float: left;
-    margin: 5px; }
-  nav#graded-style button.navbar-toggle .icon-bar {
-    background-color: #999; }
-
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) {
-  background-color: #6100b8; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) > a {
-    background-color: white;
-    padding: 15px 9px 6px 9px;
-    background-clip: padding-box;
-    border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(1) > a:focus {
-    color: #8906ff;
-    border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
-
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) {
-  background-color: #8906ff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) > a {
-    background-color: white;
-    padding: 15px 9px 6px 9px;
-    background-clip: padding-box;
-    border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(2) > a:focus {
-    color: #8906ff;
-    border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
-
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) {
-  background-color: #a139ff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) > a {
-    background-color: white;
-    padding: 15px 9px 6px 9px;
-    background-clip: padding-box;
-    border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(3) > a:focus {
-    color: #8906ff;
-    border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
-
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) {
-  background-color: #b96cff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) > a {
-    background-color: white;
-    padding: 15px 9px 6px 9px;
-    background-clip: padding-box;
-    border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(4) > a:focus {
-    color: #8906ff;
-    border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
-
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) {
-  background-color: #d29fff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) > a {
-    background-color: white;
-    padding: 15px 9px 6px 9px;
-    background-clip: padding-box;
-    border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(5) > a:focus {
-    color: #8906ff;
-    border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
-
-nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) {
-  background-color: #ead2ff; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a {
-    background-color: white;
-    padding: 15px 9px 6px 9px;
-    background-clip: padding-box;
-    border-bottom: 7px solid transparent; }
-  nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a:hover, nav#graded-style.navbar-default ul.navbar-nav > li:nth-of-type(6) > a:focus {
-    color: #8906ff;
-    border-bottom: 7px solid rgba(255, 255, 255, 0.4); }
-
-nav#graded-style .navbar-collapse {
-  border-radius: 4px; }
-  nav#graded-style .navbar-collapse ul.navbar-nav {
-    border: 1px solid #eee;
-    background-color: white; }
-nav#graded-style #menu-primary.navbar-nav LI.active A {
-  background-image: none; }
-nav#graded-style .navbar-default .navbar-nav > .active > a,
-nav#graded-style .navbar-default .navbar-nav > .open > a {
-  color: #6e00d2;
-  background-image: none;
-  border-bottom: 7px solid #6e00d2; }
-nav#graded-style .navbar-header {
-  background-color: #8906ff;
-  border-radius: 4px; }
-  nav#graded-style .navbar-header button {
+  nav .navbar-header button {
     background-color: #ad52ff; }
 
 /************ HEADER   ****************/

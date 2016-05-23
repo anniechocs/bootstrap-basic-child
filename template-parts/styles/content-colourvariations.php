@@ -17,7 +17,7 @@
 		<?php } ?>					
 		</div> <!--.row -->
 
-		<div  id="contrast-colours" class="row">
+	<!-- 	<div  id="contrast-colours" class="row">
 		<h3>Contrast colour options</h3>
 
 		<?php for ($i=0; $i < 6 ; $i++) { ?>
@@ -28,7 +28,8 @@
 			</div>
 
 		<?php } ?>					
-		</div> <!--.row -->
+		</div> 
+		
 
 				<div  id="colour-scheme-1" class="row">
 		<h2>Colour Scheme 1</h2>
@@ -41,7 +42,7 @@
 			</div>
 
 		<?php } ?>					
-		</div> <!--.row -->
+		</div> 
 
 		<div  id="colour-scheme-2" class="row">
 		<h2>Colour Scheme 2</h2>
@@ -54,7 +55,7 @@
 			</div>
 
 		<?php } ?>					
-		</div> <!--.row -->
+		</div> 
 
 		<div  id="colour-scheme-3" class="row">
 		<h2>Colour Scheme 3</h2>
@@ -67,6 +68,6 @@
 			</div>
 
 		<?php } ?>					
-		</div> <!--.row -->
+		</div> -->
 
 </article>
