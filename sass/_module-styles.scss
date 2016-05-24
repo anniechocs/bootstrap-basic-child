@@ -2,16 +2,16 @@
 
 
 .entry-header, .entry-header , .page-header {  
-    background: linear-gradient(to right,darken($base-col,20),lighten($base-col,40)); 
-    color: $base-dk;
+    @include gradient-horiz($base-dk,$base-vlt);
     padding: 0 0 3px 0;
     width: 66%;
     min-width: 250px;
     margin-bottom: 20px;
     h1{
         background-color: white;
-        color: darken($base-col,20);
-        mix-blend-mode: lighten;
+        color: $base-dk;
+      //  color: darken($base-col,20);
+      // mix-blend-mode: lighten;
         padding: 0 30px 10px 5px;
         margin: 0 0 4px 0;
         }
@@ -105,7 +105,7 @@ img {
             float: left;
             font-size :0.9em;
             //padding: 0 10px 5px 10px;
-            margin: 0 10px 5px 10px;
+            margin: 5px 10px;
             }
 }
 
@@ -219,7 +219,7 @@ img {
             border: 1px solid $mlgrey;
         .card-head {
             border: 0 solid transparent;
-            border-bottom: 4px solid transparent;
+            border-bottom: 3px solid transparent;
             @include border-gradient($base-col,lighten($base-col,20));
         }
 }

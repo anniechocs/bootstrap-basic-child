@@ -22,33 +22,19 @@ $colour-set: (
     'vlt':lighten($base-col,45),
 );
 
+$base-dk: map-get($colour-set,dk);
+$base-md: map-get($colour-set,md);
+$base-ml: map-get($colour-set,ml);
+$base-vlt: map-get($colour-set,vlt);
+
 $colours1: (
-    'dk': darken($base-col,15),
+    'dk': darken($base-col,10),
     'base': $base-col,
     'md': lighten($base-col,10),
     'ml': lighten($base-col,20),
     'lt':lighten($base-col,30),
     'vlt':lighten($base-col,40),
 );
-//
-//$colours2: (
-//    'dk': darken($base-col,15),
-//    'base': $base-col,
-//    'md': lighten($base-col,10),
-//    'ml': lighten($base-col,20),
-//    'contr':map-get($contrasts,'blue'),
-//    'vlt':lighten(map-get($contrasts,'blue'),15),
-//);
-//
-//$colours3: (
-//    'dk': darken($base-col,15),
-//    'base': $base-col,
-//    'md': lighten($base-col,10),
-//    'blue': map-get($contrasts,'blue'),
-//    'green':map-get($contrasts,'green'),
-//    'lime':map-get($contrasts,'lime'),
-//);
-
 
 
 $greys: (
@@ -66,11 +52,10 @@ $mlgrey: map-get($greys,'ml');
 $ltgrey: map-get($greys,'lt');
 $vltgrey: map-get($greys,'vlt');
 
-$base-dk: map-get($colours1,dk);
-$base-md: map-get($colour-set,md);
 
-$bgcolour: #F2F7FE;
-$mypadding: 10px;
+$bgcolour: $ltgrey;
+
+//$mypadding: 10px;
 $args:5px 5px 5px 5px; 
 $args1: 3px 6px 15px 8px rgba(0, 0, 0, 0.2);
 $args2: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);

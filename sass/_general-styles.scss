@@ -1,19 +1,27 @@
 /* GENERAL STYLES */
 body {
   background-color: $bgcolour;
+   // @include gradient($base-dk, $base-md);
   font-size: 11pt;
   font-family: Calabri Light, Calabri, sans-serif;
   color: $dkgrey;
   min-height: 100%;
     a {
         color: $base-dk;
-      //  text-decoration: underline;
-        &:hover {
+
+        &:hover, &:focus {
             color:$base-col;
         }
     }
 }
-
+.container {
+ //   background-color: white;
+//    border: 10px solid $base-dk;
+//    border-top: 0 solid transparent;
+  //  background-color: rgba(255,255,255,0.95);
+  //  background-color: $base-dk;
+    
+}
 h1 {
     font-size: 3rem;
     a {

@@ -71,14 +71,14 @@ Changes by Anne Griffith
     width: 16.66666667%; } }
 /* GENERAL STYLES */
 body {
-  background-color: #F2F7FE;
+  background-color: #eee;
   font-size: 11pt;
   font-family: Calabri Light, Calabri, sans-serif;
   color: #555;
   min-height: 100%; }
   body a {
-    color: #6100b8; }
-    body a:hover {
+    color: #6e00d2; }
+    body a:hover, body a:focus {
       color: #8906ff; }
 
 h1 {
@@ -107,16 +107,17 @@ table, th, td {
 
 /***************** HEADERS **************/
 .entry-header, .entry-header, .page-header {
-  background: linear-gradient(to right, #54009f, #ead2ff);
-  color: #6100b8;
+  background-color: #6e00d2;
+  background: -webkit-gradient(linear, left top, right top, from(#6e00d2), to(#f6ebff));
+  background: -webkit-linear-gradient(left, #6e00d2, #f6ebff);
+  background: linear-gradient(to right, #6e00d2, #f6ebff);
   padding: 0 0 3px 0;
   width: 66%;
   min-width: 250px;
   margin-bottom: 20px; }
   .entry-header h1, .entry-header h1, .page-header h1 {
     background-color: white;
-    color: #54009f;
-    mix-blend-mode: lighten;
+    color: #6e00d2;
     padding: 0 30px 10px 5px;
     margin: 0 0 4px 0; }
 
@@ -170,13 +171,13 @@ img {
   border-radius: 4px;
   margin-bottom: 10px; }
   .single-note h2, .single-note h3 {
-    color: #6100b8;
+    color: #6e00d2;
     margin: 10px; }
   .single-note p {
     display: block;
     float: left;
     font-size: 0.9em;
-    margin: 0 10px 5px 10px; }
+    margin: 5px 10px; }
 
 .notice-board {
   border: #eee solid 1px;
@@ -184,26 +185,26 @@ img {
   margin-bottom: 10px;
   background-color: #eee; }
   .notice-board h2, .notice-board h3 {
-    color: #6100b8;
+    color: #6e00d2;
     margin: 10px; }
   .notice-board p {
     display: block;
     float: left;
     font-size: 0.9em;
-    margin: 0 10px 5px 10px; }
+    margin: 5px 10px; }
 
 .horiz-card {
   border: #eee solid 1px;
   border-radius: 4px;
   margin-bottom: 10px; }
   .horiz-card h2, .horiz-card h3 {
-    color: #6100b8;
+    color: #6e00d2;
     margin: 10px; }
   .horiz-card p {
     display: block;
     float: left;
     font-size: 0.9em;
-    margin: 0 10px 5px 10px; }
+    margin: 5px 10px; }
   .horiz-card:after {
     content: "";
     display: table;
@@ -235,13 +236,13 @@ img {
   float: left;
   display: block; }
   .vert-card h2, .vert-card h3 {
-    color: #6100b8;
+    color: #6e00d2;
     margin: 10px; }
   .vert-card p {
     display: block;
     float: left;
     font-size: 0.9em;
-    margin: 0 10px 5px 10px; }
+    margin: 5px 10px; }
   .vert-card:after {
     content: "";
     display: table;
@@ -333,7 +334,7 @@ img {
     align-self: flex-end; }
   .vert-card .card-head {
     border: 0 solid transparent;
-    border-bottom: 4px solid transparent;
+    border-bottom: 3px solid transparent;
     background: white, #8906ff;
     background: -webkit-linear-gradient(left, white, white), -webkit-linear-gradient(left, #8906ff, #b96cff);
     background: linear-gradient(white, white), linear-gradient(to right, #8906ff, #b96cff);
@@ -458,7 +459,7 @@ nav button.navbar-toggle {
 
 /****** GRADED NAV STYLES *********/
 nav.navbar-default ul.navbar-nav > li:nth-of-type(1) {
-  background-color: #6100b8; }
+  background-color: #6e00d2; }
   nav.navbar-default ul.navbar-nav > li:nth-of-type(1) > a {
     background-color: white;
     padding: 15px 15px 8px 15px;
