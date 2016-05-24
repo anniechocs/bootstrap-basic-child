@@ -31,7 +31,6 @@
         }
     .navbar-collapse{
         padding: 0; // default: 0 15px
-        border-radius: 4px;
     }
     ul.navbar-nav{
         margin: 0; // default: 0 -15px
@@ -127,7 +126,7 @@ nav {
     .navbar-collapse {
         border-radius: 4px;
                     ul.navbar-nav{
-                border: 1px solid $ltgrey;
+               // border: 1px solid $ltgrey;
                 background-color: white;
         }
     }

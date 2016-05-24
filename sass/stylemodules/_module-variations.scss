@@ -1,0 +1,106 @@
+/***************** HEADERS **************/
+
+#module-styles-1 {
+.entry-header h1, .entry-header h1.entry-title, h1.entry-header, .page-header h1 {    
+    color: $base-dk;
+    border-bottom: 1px solid $base-dk;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 66%;
+    min-width: 250px;
+}
+}
+
+#module-styles-2 {
+.entry-header, .entry-header , .page-header {  
+    background: linear-gradient(to right,darken($base-col,20),lighten($base-col,20)); 
+    color: $base-dk;
+    padding: 0 0 3px 0;
+    width: 66%;
+    min-width: 250px;
+    h1{
+        background-color: white;
+        color: darken($base-col,20);
+        mix-blend-mode: lighten;
+        padding: 5px 0;
+        margin: 0;
+        }
+    }
+    h1.entry-title, h1.entry-header {
+         background-color: white;
+//        padding-bottom: 10px;
+//        margin-bottom: 20px; 
+    }
+
+}
+
+
+/************** BOXES AND CARDS ******************/
+
+
+// Cards Magor
+
+#module-styles-1 {
+   .vert-card {
+        border-radius: 4px;
+        @include box-shadow($args3); 
+       .flex-img-holder {
+            margin: 0 10px 10px 10px;
+            @include box-shadow($args3); 
+       }
+   
+    } 
+    
+    .horiz-card{
+       @include box-shadow($args3); 
+        img {
+            @include box-shadow($args3); 
+        }
+    }
+    .single-note, notice-board {
+        @include box-shadow($args3); 
+    }
+}
+
+// Cards Monochrome
+#module-styles-2 {
+    #mod-vert-card {
+        @include gradient($ltgrey,white);
+    }
+    .vert-card:nth-of-type(1) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-bottom: 4px solid transparent;
+            @include border-gradient($base-col,lighten($base-col,20));
+        }
+    }
+    .vert-card:nth-of-type(2) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            @include border-gradient($base-col,lighten($base-col,20));
+        }
+    }
+        .vert-card:nth-of-type(3) {
+        border: 1px solid $mlgrey;
+        .card-head {
+            border: 0 solid transparent;
+            border-bottom: 4px solid $base-col;
+        }
+    }
+  
+//        .vert-card:nth-of-type(3) {
+//        border: 1px solid $mlgrey;
+//        .card-head {
+//            background-color:$base-col;
+//            h2, h3 {color: white;}
+//            //@include gradient-horiz($base-col,lighten($base-col,20));
+//            //@include gradient(lighten($base-col,20),$base-col);
+//        }
+//    }
+}
+
+

@@ -106,27 +106,21 @@ table, th, td {
   padding: 5px 10px; }
 
 /***************** HEADERS **************/
-#module-styles-1 .entry-header h1, #module-styles-1 .entry-header h1.entry-title, #module-styles-1 h1.entry-header, #module-styles-1 .page-header h1 {
-  color: #6100b8;
-  border-bottom: 1px solid #6100b8;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  width: 66%;
-  min-width: 250px; }
-
-#module-styles-2 .entry-header, #module-styles-2 .entry-header, #module-styles-2 .page-header {
-  background: linear-gradient(to right, #54009f, #b96cff);
+.entry-header, .entry-header, .page-header {
+  background: linear-gradient(to right, #54009f, #ead2ff);
   color: #6100b8;
   padding: 0 0 3px 0;
   width: 66%;
-  min-width: 250px; }
-  #module-styles-2 .entry-header h1, #module-styles-2 .entry-header h1, #module-styles-2 .page-header h1 {
+  min-width: 250px;
+  margin-bottom: 20px; }
+  .entry-header h1, .entry-header h1, .page-header h1 {
     background-color: white;
     color: #54009f;
     mix-blend-mode: lighten;
-    padding: 5px 0;
-    margin: 0; }
-#module-styles-2 h1.entry-title, #module-styles-2 h1.entry-header {
+    padding: 0 30px 10px 5px;
+    margin: 0 0 4px 0; }
+
+h1.entry-title, h1.entry-header {
   background-color: white; }
 
 /**************** IMAGES ***************/
@@ -288,7 +282,8 @@ img {
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   -moz-justify-content: flex-start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  border: 1px solid #ddd; }
   .vert-card .card-head {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
@@ -336,59 +331,13 @@ img {
     -moz-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end; }
-
-#module-styles-1 .vert-card {
-  border-radius: 4px;
-  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-  #module-styles-1 .vert-card .flex-img-holder {
-    margin: 0 10px 10px 10px;
-    -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-#module-styles-1 .horiz-card {
-  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-  #module-styles-1 .horiz-card img {
-    -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-#module-styles-1 .single-note, #module-styles-1 notice-board {
-  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.04); }
-
-#module-styles-2 #mod-vert-card {
-  background-color: #eee;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(white));
-  background: -webkit-linear-gradient(top, #eee, white);
-  background: linear-gradient(to bottom, #eee, white); }
-#module-styles-2 .vert-card:nth-of-type(1) {
-  border: 1px solid #ddd; }
-  #module-styles-2 .vert-card:nth-of-type(1) .card-head {
+  .vert-card .card-head {
     border: 0 solid transparent;
     border-bottom: 4px solid transparent;
     background: white, #8906ff;
     background: -webkit-linear-gradient(left, white, white), -webkit-linear-gradient(left, #8906ff, #b96cff);
     background: linear-gradient(white, white), linear-gradient(to right, #8906ff, #b96cff);
     background-clip: padding-box, border-box; }
-#module-styles-2 .vert-card:nth-of-type(2) {
-  border: 1px solid #ddd; }
-  #module-styles-2 .vert-card:nth-of-type(2) .card-head {
-    border: 0 solid transparent;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    background: white, #8906ff;
-    background: -webkit-linear-gradient(left, white, white), -webkit-linear-gradient(left, #8906ff, #b96cff);
-    background: linear-gradient(white, white), linear-gradient(to right, #8906ff, #b96cff);
-    background-clip: padding-box, border-box; }
-#module-styles-2 .vert-card:nth-of-type(3) {
-  border: 1px solid #ddd; }
-  #module-styles-2 .vert-card:nth-of-type(3) .card-head {
-    border: 0 solid transparent;
-    border-bottom: 4px solid #8906ff; }
 
 /************* LISTS ****************/
 .list-box h4 {
@@ -422,8 +371,7 @@ nav#reset-style.navbar-default {
   nav#reset-style.navbar-default .navbar.navbar-default {
     margin-bottom: 10px; }
   nav#reset-style.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
+    padding: 0; }
   nav#reset-style.navbar-default ul.navbar-nav {
     margin: 0; }
     nav#reset-style.navbar-default ul.navbar-nav li > a {
@@ -472,8 +420,7 @@ nav.navbar-default {
   nav.navbar-default .navbar.navbar-default {
     margin-bottom: 10px; }
   nav.navbar-default .navbar-collapse {
-    padding: 0;
-    border-radius: 4px; }
+    padding: 0; }
   nav.navbar-default ul.navbar-nav {
     margin: 0; }
     nav.navbar-default ul.navbar-nav li > a {
@@ -579,7 +526,6 @@ nav.navbar-default ul.navbar-nav > li:nth-of-type(6) {
 nav .navbar-collapse {
   border-radius: 4px; }
   nav .navbar-collapse ul.navbar-nav {
-    border: 1px solid #eee;
     background-color: white; }
 nav #menu-primary.navbar-nav LI.active A {
   background-image: none; }
